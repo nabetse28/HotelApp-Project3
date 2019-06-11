@@ -11,9 +11,7 @@ import {
   Button,
   Linking
 } from 'react-native';
-import { Card, ListItem, Icon, SocialIcon } from 'react-native-elements';
-
-import Slideshow from 'react-native-image-slider-show';
+import { SocialIcon } from 'react-native-elements';
 
 export default class ContactScreen extends React.Component {
   static navigationOptions = {
@@ -84,7 +82,8 @@ export default class ContactScreen extends React.Component {
                 alignSelf: 'center',
                 fontSize: 14,
                 fontStyle: 'italic',
-                color: 'royalblue'
+                color: 'royalblue',
+                marginBottom: '2%'
               }}
             >
               crm@riu.com

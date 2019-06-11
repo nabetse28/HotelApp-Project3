@@ -7,7 +7,7 @@ import {
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import ServicesScreen from '../screens/ServicesScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ContactScreen from '../screens/ContactScreen';
 
@@ -20,11 +20,11 @@ HomeStack.navigationOptions = {
   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name={'md-bed'} />
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen
+const ServicesStack = createStackNavigator({
+  Services: ServicesScreen
 });
 
-LinksStack.navigationOptions = {
+ServicesStack.navigationOptions = {
   tabBarLabel: 'Services',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'ios-walk'} />
@@ -55,7 +55,7 @@ SettingsStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  ServicesStack,
   ContactStack,
   SettingsStack
 });

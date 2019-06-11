@@ -195,12 +195,6 @@ export default class HomeScreen extends React.Component {
             </Text>
             <Button title="Book Now" />
           </Card>
-          <SocialIcon
-            type="facebook"
-            onPress={() => {
-              Linking.openURL('https://instagram.com');
-            }}
-          />
         </ScrollView>
       </View>
     );
