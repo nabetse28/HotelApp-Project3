@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "project": {
+    "name": "cms"
+  },
+  "api": {
+    "projectId": "102sza00",
+    "dataset": "hotel"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/google-maps-input",
+    "@sanity/vision"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
