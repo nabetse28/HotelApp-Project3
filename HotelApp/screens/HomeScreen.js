@@ -10,7 +10,7 @@ import {
   View,
   Button
 } from 'react-native';
-import { Card, ListItem, Icon } from 'react-native-elements';
+import { Card, ListItem, Icon, SocialIcon } from 'react-native-elements';
 import SanityClient from '@sanity/client';
 import Slideshow from 'react-native-image-slider-show';
 
@@ -195,6 +195,12 @@ export default class HomeScreen extends React.Component {
             </Text>
             <Button title="Book Now" />
           </Card>
+          <SocialIcon
+            type="facebook"
+            onPress={() => {
+              Linking.openURL('https://instagram.com');
+            }}
+          />
         </ScrollView>
       </View>
     );
