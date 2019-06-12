@@ -8,7 +8,8 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Button
+  Button,
+  Linking
 } from 'react-native';
 import { Card, ListItem, Icon, SocialIcon } from 'react-native-elements';
 import SanityClient from '@sanity/client';
@@ -102,7 +103,7 @@ export default class HomeScreen extends React.Component {
       this.setState({
         rooms: resultRooms
       });
-      console.log(resultRooms);
+      // console.log(resultRooms);
     });
   }
 
@@ -153,7 +154,14 @@ export default class HomeScreen extends React.Component {
             <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
               {this.state.rooms[0].description}
             </Text>
-            <Button title="Book Now" />
+            <Button
+              title="Book Now"
+              onPress={() => {
+                Linking.openURL(
+                  'https://www.riu.com/en/hotel/costa-rica/guanacaste/hotel-riu-palace-costa-rica/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XCR#rooms-grid'
+                );
+              }}
+            />
           </Card>
           <Card title="Jr. Suite with garden view">
             <Image
@@ -163,7 +171,14 @@ export default class HomeScreen extends React.Component {
             <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
               {this.state.rooms[1].description}
             </Text>
-            <Button title="Book Now" />
+            <Button
+              title="Book Now"
+              onPress={() => {
+                Linking.openURL(
+                  'https://www.riu.com/en/hotel/costa-rica/guanacaste/hotel-riu-palace-costa-rica/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XCR#rooms-grid'
+                );
+              }}
+            />
           </Card>
           <Card title="Family Suite (2 Bedrooms)">
             <Image
@@ -173,7 +188,14 @@ export default class HomeScreen extends React.Component {
             <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
               {this.state.rooms[2].description}
             </Text>
-            <Button title="Book Now" />
+            <Button
+              title="Book Now"
+              onPress={() => {
+                Linking.openURL(
+                  'https://www.riu.com/en/hotel/costa-rica/guanacaste/hotel-riu-palace-costa-rica/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XCR#rooms-grid'
+                );
+              }}
+            />
           </Card>
           <Card title="Jr. Suite with sea view">
             <Image
@@ -183,7 +205,14 @@ export default class HomeScreen extends React.Component {
             <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
               {this.state.rooms[3].description}
             </Text>
-            <Button title="Book Now" />
+            <Button
+              title="Book Now"
+              onPress={() => {
+                Linking.openURL(
+                  'https://www.riu.com/en/hotel/costa-rica/guanacaste/hotel-riu-palace-costa-rica/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XCR#rooms-grid'
+                );
+              }}
+            />
           </Card>
           <Card title="Suite Jacuzzi with sea view">
             <Image
@@ -193,7 +222,14 @@ export default class HomeScreen extends React.Component {
             <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
               {this.state.rooms[4].description}
             </Text>
-            <Button title="Book Now" />
+            <Button
+              title="Book Now"
+              onPress={() => {
+                Linking.openURL(
+                  'https://www.riu.com/en/hotel/costa-rica/guanacaste/hotel-riu-palace-costa-rica/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XCR#rooms-grid'
+                );
+              }}
+            />
           </Card>
         </ScrollView>
       </View>

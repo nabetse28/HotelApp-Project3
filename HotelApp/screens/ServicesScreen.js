@@ -65,7 +65,7 @@ export default class ServicesScrenn extends React.Component {
       this.setState({
         services: resultServices
       });
-      console.log(resultServices);
+      // console.log(resultServices);
     });
   }
 

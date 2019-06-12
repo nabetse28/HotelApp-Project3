@@ -10,6 +10,7 @@ import HomeScreen from '../screens/HomeScreen';
 import ServicesScreen from '../screens/ServicesScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ContactScreen from '../screens/ContactScreen';
+import RegisterScreen from '../screens/RegisterScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
@@ -43,7 +44,8 @@ ContactStack.navigationOptions = {
 };
 
 const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen
+  Settings: SettingsScreen,
+  Register: RegisterScreen
 });
 
 SettingsStack.navigationOptions = {
