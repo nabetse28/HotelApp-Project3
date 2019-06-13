@@ -147,9 +147,9 @@ export default class HomeScreen extends React.Component {
           <Card title="Jr. Suite">
             <Image
               source={{ uri: this.state.rooms[0].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.rooms[0].description}
             </Text>
             <Button
@@ -164,9 +164,9 @@ export default class HomeScreen extends React.Component {
           <Card title="Jr. Suite with garden view">
             <Image
               source={{ uri: this.state.rooms[1].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.rooms[1].description}
             </Text>
             <Button
@@ -181,9 +181,9 @@ export default class HomeScreen extends React.Component {
           <Card title="Family Suite (2 Bedrooms)">
             <Image
               source={{ uri: this.state.rooms[2].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.rooms[2].description}
             </Text>
             <Button
@@ -198,9 +198,9 @@ export default class HomeScreen extends React.Component {
           <Card title="Jr. Suite with sea view">
             <Image
               source={{ uri: this.state.rooms[3].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.rooms[3].description}
             </Text>
             <Button
@@ -215,9 +215,9 @@ export default class HomeScreen extends React.Component {
           <Card title="Suite Jacuzzi with sea view">
             <Image
               source={{ uri: this.state.rooms[4].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.rooms[4].description}
             </Text>
             <Button
@@ -260,5 +260,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontStyle: 'italic',
     fontWeight: 'bold'
+  },
+  image: {
+    height: 150,
+    width: 320,
+    alignSelf: 'center'
+  },
+  cardDescription: {
+    marginBottom: '2%',
+    marginTop: '2%',
+    textAlign: 'justify'
   }
 });

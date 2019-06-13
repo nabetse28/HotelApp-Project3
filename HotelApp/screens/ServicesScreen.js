@@ -82,18 +82,18 @@ export default class ServicesScrenn extends React.Component {
           <Card title="Spa">
             <Image
               source={{ uri: this.state.services[1].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.services[1].description}
             </Text>
           </Card>
           <Card title="Tours in the Hotel">
             <Image
               source={{ uri: this.state.services[3].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.services[3].description}
             </Text>
           </Card>
@@ -110,18 +110,18 @@ export default class ServicesScrenn extends React.Component {
           <Card title="Rincon de la Vieja Volcano">
             <Image
               source={{ uri: this.state.services[0].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.services[0].description}
             </Text>
           </Card>
           <Card title="Rafting">
             <Image
               source={{ uri: this.state.services[2].url }}
-              style={{ height: 150, width: 320, alignSelf: 'center' }}
+              style={styles.image}
             />
-            <Text style={{ marginBottom: '2%', marginTop: '2%' }}>
+            <Text style={styles.cardDescription}>
               {this.state.services[2].description}
             </Text>
           </Card>
@@ -156,5 +156,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontStyle: 'italic',
     fontWeight: 'bold'
+  },
+  image: {
+    height: 150,
+    width: 320,
+    alignSelf: 'center'
+  },
+  cardDescription: {
+    marginBottom: '2%',
+    marginTop: '2%',
+    textAlign: 'justify'
   }
 });

@@ -11,7 +11,7 @@ import { SocialIcon } from 'react-native-elements';
 
 export default class ContactScreen extends React.Component {
   static navigationOptions = {
-    title: 'Contact Us'
+    title: 'CONTACT US'
   };
 
   constructor(props) {
@@ -124,6 +124,15 @@ export default class ContactScreen extends React.Component {
           type="twitter"
           onPress={() => {
             Linking.openURL('https://twitter.com/RiuHoteles');
+          }}
+        />
+        <SocialIcon
+          style={{ alignSelf: 'center' }}
+          type="youtube"
+          onPress={() => {
+            Linking.openURL(
+              'https://www.youtube.com/channel/UCf-sIM6fsLUnr7dFM5N0O9g'
+            );
           }}
         />
       </View>

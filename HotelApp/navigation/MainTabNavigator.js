@@ -12,6 +12,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import ContactScreen from '../screens/ContactScreen';
 import RegisterScreen from '../screens/RegisterScreen';
 import WeatherScreen from '../screens/WeatherScreen';
+import SchedulerScreen from '../screens/SchedulerScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
@@ -44,6 +45,18 @@ WeatherStack.navigationOptions = {
   )
 };
 
+// ios-list-box
+const SchedulerStack = createStackNavigator({
+  Contact: SchedulerScreen
+});
+
+SchedulerStack.navigationOptions = {
+  tabBarLabel: 'Itinerary',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={'ios-list-box'} />
+  )
+};
+
 const ContactStack = createStackNavigator({
   Contact: ContactScreen
 });
@@ -71,6 +84,7 @@ export default createBottomTabNavigator({
   HomeStack,
   ServicesStack,
   WeatherStack,
+  SchedulerStack,
   ContactStack,
   SettingsStack
 });

@@ -17,7 +17,7 @@ import smart from '../../HotelApp/assets/images/riu.jpg';
 
 export default class WeatherScreen extends React.Component {
   static navigationOptions = {
-    title: 'Weather in Hotel'
+    title: 'WEATHER IN THE REGION'
   };
 
   constructor(props) {

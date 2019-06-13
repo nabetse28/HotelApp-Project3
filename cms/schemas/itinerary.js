@@ -1,8 +1,8 @@
-import icon from 'react-icons/lib/md/room-service';
+import icon from 'react-icons/lib/md/assignment';
 
 export default {
-  name: 'service',
-  title: 'Service',
+  name: 'itinerary',
+  title: 'Itinerary',
   type: 'document',
   icon,
   fields: [
@@ -17,18 +17,14 @@ export default {
       type: 'text'
     },
     {
-      name: 'photos',
-      title: 'Photos',
-      type: 'image',
-      options: {
-        hotspot: true
-      }
+      name: 'hour',
+      tittle: 'Hour',
+      type: 'string'
     }
   ],
   preview: {
     select: {
-      title: 'title',
-      media: 'photo'
+      title: 'title'
     }
   }
 };

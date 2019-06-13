@@ -13,7 +13,7 @@ import { SocialIcon } from 'react-native-elements';
 
 export default class RegisterScreen extends React.Component {
   static navigationOptions = {
-    title: 'Register'
+    title: 'REGISTER'
   };
 
   state = {

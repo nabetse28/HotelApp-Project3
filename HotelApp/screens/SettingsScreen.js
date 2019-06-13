@@ -14,7 +14,7 @@ import { SocialIcon } from 'react-native-elements';
 import smart from '../../HotelApp/assets/images/riu.jpg';
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
-    title: ''
+    title: 'USER SETTINGS'
   };
 
   state = {
