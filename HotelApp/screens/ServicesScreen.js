@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  ScrollView,
-  StyleSheet,
-  View,
-  Text,
-  Button,
-  Image
-} from 'react-native';
+import { ScrollView, StyleSheet, View, Text, Image } from 'react-native';
 import { Card } from 'react-native-elements';
 import SanityClient from '@sanity/client';
 

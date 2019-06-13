@@ -5,15 +5,11 @@ import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {
   Image,
-  TextInput,
   ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
-  Button,
-  Linking,
-  AsyncStorage
+  View
 } from 'react-native';
 import { Card, Divider } from 'react-native-elements';
 import DatePicker from 'react-native-datepicker';

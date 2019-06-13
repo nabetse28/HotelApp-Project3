@@ -8,8 +8,6 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Button,
-  Linking,
   AsyncStorage
 } from 'react-native';
 import { SocialIcon } from 'react-native-elements';
@@ -31,14 +29,7 @@ export default class SettingsScreen extends React.Component {
     uPassword: ''
   };
 
-  componentWillMount() {
-    // AsyncStorage.getItem('logged').then(data => {
-    //   console.log(data);
-    //   this.setState({
-    //     isLogged: data
-    //   });
-    // });
-  }
+  componentWillMount() {}
 
   _deletData = async () => {
     try {
