@@ -89,15 +89,15 @@ export default class WeatherScreen extends React.Component {
           ),
           summary: responseData.currently.summary
         });
-        console.log(responseData);
-        console.log(
-          'This is the icon we have to use ',
-          responseData.daily.data[0].icon
-        );
-        console.log(
-          'This is the termperature in Celcius ',
-          ((responseData.daily.data[0].temperatureHigh - 32) * 5) / 9
-        );
+        // console.log(responseData);
+        // console.log(
+        //   'This is the icon we have to use ',
+        //   responseData.daily.data[0].icon
+        // );
+        // console.log(
+        //   'This is the termperature in Celcius ',
+        //   ((responseData.daily.data[0].temperatureHigh - 32) * 5) / 9
+        // );
       })
       .catch(function(err) {
         alert("Data aren't correct");
