@@ -104,7 +104,7 @@ export default class SettingsScreen extends React.Component {
     } else {
       console.log(this.state.UserName, this.state.isLogged);
 
-      fetch('http://192.168.1.10:3000/hotel/users/' + this.state.UserName)
+      fetch('http://192.168.1.11:3000/hotel/users/' + this.state.UserName)
         .then(response => response.json())
         .then(responseData => {
           if (responseData[0].Password == this.state.Password) {
@@ -150,7 +150,7 @@ export default class SettingsScreen extends React.Component {
         })
       };
 
-      fetch('http://192.168.1.10:3000/hotel/users/updatePassword/', object)
+      fetch('http://192.168.1.11:3000/hotel/users/updatePassword/', object)
         .then(response => response.json())
         .then(responseData => {
           if (responseData) {

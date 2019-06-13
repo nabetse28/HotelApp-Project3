@@ -84,6 +84,28 @@ export default class ContactScreen extends React.Component {
             >
               crm@riu.com
             </Text>
+            <Text
+              style={{
+                alignSelf: 'center',
+                fontSize: 20,
+                fontStyle: 'italic',
+                fontWeight: 'bold',
+                marginBottom: '2%'
+              }}
+            >
+              Telephone:{' '}
+            </Text>
+            <Text
+              style={{
+                alignSelf: 'center',
+                fontSize: 14,
+                fontStyle: 'italic',
+                color: 'royalblue',
+                marginBottom: '2%'
+              }}
+            >
+              +506 2681-2350
+            </Text>
           </View>
         </View>
 
@@ -113,7 +135,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: '50%'
+    marginTop: '40%'
   },
   welcome: {
     marginLeft: '2%',

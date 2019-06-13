@@ -53,6 +53,7 @@ export default class WeatherScreen extends React.Component {
       .then(response => response.json())
       .then(responseData => {
         // cloudy, partly-cloudy-day, clear-day, rain, wind
+        console.log(responseData);
         if (responseData.daily.data[0].icon == 'rain') {
           this.setState({
             icon: '09d'

@@ -95,7 +95,7 @@ export default class RegisterScreen extends React.Component {
           })
         };
 
-        fetch('http://192.168.1.10:3000/hotel/users/', object)
+        fetch('http://192.168.1.11:3000/hotel/users/', object)
           .then(response => response.json())
           .then(responseData => {
             if (responseData) {
