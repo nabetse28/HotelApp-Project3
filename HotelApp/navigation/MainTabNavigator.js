@@ -11,6 +11,7 @@ import ServicesScreen from '../screens/ServicesScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ContactScreen from '../screens/ContactScreen';
 import RegisterScreen from '../screens/RegisterScreen';
+import WeatherScreen from '../screens/WeatherScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
@@ -29,6 +30,17 @@ ServicesStack.navigationOptions = {
   tabBarLabel: 'Services',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={'ios-walk'} />
+  )
+};
+
+const WeatherStack = createStackNavigator({
+  Contact: WeatherScreen
+});
+
+WeatherStack.navigationOptions = {
+  tabBarLabel: 'Weather',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={'ios-cloud-outline'} />
   )
 };
 
@@ -58,6 +70,7 @@ SettingsStack.navigationOptions = {
 export default createBottomTabNavigator({
   HomeStack,
   ServicesStack,
+  WeatherStack,
   ContactStack,
   SettingsStack
 });
