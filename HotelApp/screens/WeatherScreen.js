@@ -1,7 +1,5 @@
 // 10.5276159
 // -85.7491779
-
-import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {
   Image,
@@ -47,8 +45,7 @@ export default class WeatherScreen extends React.Component {
       'https://api.darksky.net/forecast/a3a59ad6a5ccf7360892de9498110836/10.5276159,-85.7491779,' +
         this.state.date +
         'T12:00:00' +
-        '?exclude=hourly,minutely,alerts,flags' +
-        this.state.UserName
+        '?exclude=hourly,minutely,alerts,flags'
     )
       .then(response => response.json())
       .then(responseData => {
